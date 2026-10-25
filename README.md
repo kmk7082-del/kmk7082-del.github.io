@@ -1,7 +1,8 @@
 # 한 칸의 여유 무료 공식 홈페이지 배포 안내
 
-## 중요: 아직 게시하지 않은 초안
-- `privacy.html`에는 반드시 실제 **공개 가능한 개인정보 문의 이메일**, Google Play에 표기할 개발자명, 시행일을 입력하세요.
+## 공개 홈페이지 현황
+- GitHub Pages 배포 설정 완료 (`main / (root)`).
+- 개인정보처리방침에 개발자명 **NOVAPIXEL**, 공개 문의 이메일 **kmk7082@gmail.com**, 시행일 **2026-10-26** 반영.
 - 정책의 제3자 광고 정보 처리·국외 이전·보관 관련 문구도 실제 SDK와 Google Play 데이터 보안 양식에 맞게 최종 검토하세요.
 - `app-ads.txt`는 제공된 AdMob 게시자 식별자를 이용해 준비했습니다. 반드시 AdMob 콘솔 > 앱 > app-ads.txt 안내의 **개인화된 코드를 확인**해 동일한지 비교하세요.
 
@@ -14,7 +15,7 @@
    - 홈페이지: `https://kmk7082-del.github.io/`
    - 개인정보처리방침: `https://kmk7082-del.github.io/privacy.html`
    - 광고 판매자 선언: `https://kmk7082-del.github.io/app-ads.txt`
-6. 개인정보 정책에 플레이 개발자명·연락처를 기재한 후 검증합니다. GitHub repo를 먼저 만들어주시면 GitHub 연결로 제가 파일 업로드를 진행할 수도 있습니다.
+6. 개인정보방침의 개발자명·연락처·시행일을 반영했습니다. 스토어 제출 전 실제 SDK 데이터 처리와 일치하는지 검토합니다. 파일은 GitHub에 등록되어 있으며 Pages에서 main / (root)로 배포 설정했습니다.
 
 ## Google Play 및 AdMob 연결
 - Play Console 앱 상세 스토어 설정에서 개발자 웹사이트로 `https://kmk7082-del.github.io/` 을 설정합니다.
