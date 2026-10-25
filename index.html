@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f7f3">
+  <meta name="description" content="한 칸의 여유 — 매일 한 문제씩, 나만의 속도로 즐기는 스도쿠 퍼즐 게임. 초급부터 고급까지 총 600개 스테이지와 일일 도전을 만나보세요.">
+  <title>한 칸의 여유 — 스도쿠 퍼즐 게임</title>
+  <style>
+    :root { color-scheme:light; --bg:#f2f7f3; --ink:#203b30; --deep:#214a39; --leaf:#4c8566; --muted:#63786d; --border:#dfeae2; --white:#fffefa; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--bg); color:var(--ink); font-family:ui-sans-serif,system-ui,-apple-system,'Noto Sans KR','Malgun Gothic',sans-serif;line-height:1.7; }
+    a { color:var(--deep);text-underline-offset:3px; } a:focus-visible { outline:3px solid #7abb96;outline-offset:3px;border-radius:4px; }
+    .wrap {max-width:1080px; margin:auto; padding:0 24px;} header { border-bottom:1px solid var(--border); background:rgba(255,255,255,.65);}
+    nav {display:flex;justify-content:space-between;align-items:center;min-height:76px;gap:20px;} .brand {display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;text-decoration:none;letter-spacing:-.04em;} .logo {width:36px;height:36px;border-radius:11px;background:var(--deep);color:white;display:grid;place-items:center;font-weight:700;letter-spacing:0;}
+    .menu {display:flex;gap:22px;align-items:center;font-size:14px;} .menu a {color:var(--muted);text-decoration:none;font-weight:600;} .menu a:hover {color:var(--deep)}
+    .hero {padding:100px 0 90px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:65px;align-items:center;}
+    .eyebrow {font-size:12px;letter-spacing:.15em;font-weight:800;color:var(--leaf);text-transform:uppercase;}
+    h1 {font-size:clamp(42px,6vw,72px);letter-spacing:-.085em;line-height:1.12;margin:14px 0 23px;} h1 em {font-style:normal;color:var(--leaf);} .lead {font-size:18px;color:var(--muted);max-width:480px;line-height:1.85;}
+    .chips {margin-top:26px;display:flex;flex-wrap:wrap;gap:9px;} .chips span {border:1px solid var(--border);padding:7px 12px;background:#fff;border-radius:999px;color:#446758;font-size:12px;font-weight:700;}
+    .preview {border-radius:30px;padding:29px;background:#e4efe7;box-shadow:0 30px 90px #203b3017;position:relative;} .sheet {background:var(--white);padding:25px;border-radius:23px;box-shadow:0 9px 20px #203b300e;} .sheet-head{display:flex;justify-content:space-between;color:#577469;font-size:12px;font-weight:800;margin-bottom:16px;}
+    .sudoku {aspect-ratio:1;display:grid;grid-template-columns:repeat(9,minmax(0,1fr));grid-template-rows:repeat(9,minmax(0,1fr));border:2px solid var(--deep);border-radius:3px;overflow:hidden;background:#fff;} .cell {display:grid;place-items:center;font-size:clamp(12px,2vw,24px);color:#315b47;line-height:1;min-width:0;min-height:0;border-right:1px solid #d6e5da;border-bottom:1px solid #d6e5da;font-weight:700;}.cell:nth-child(9n+3),.cell:nth-child(9n+6){border-right:2px solid var(--deep)}.cell:nth-child(n+19):nth-child(-n+27),.cell:nth-child(n+46):nth-child(-n+54){border-bottom:2px solid var(--deep)}.cell.empty{color:transparent}.cell.selected{background:#e0efe4;color:#326a4c}.sheet-foot {display:flex;justify-content:space-between;color:#60816f;margin-top:15px;font-size:13px;font-weight:700}
+    .section {padding:40px 0 100px;} .section h2 {font-size:32px;letter-spacing:-.06em;margin:0 0 25px;} .cards {display:grid;grid-template-columns:repeat(3,1fr);gap:17px;} .card {background:#fff;padding:28px;border-radius:20px;border:1px solid var(--border);min-height:165px;}.card strong {font-size:19px;letter-spacing:-.03em;} .card p {margin:9px 0 0;color:var(--muted);font-size:14px;}
+    .note {padding:21px 24px;background:#e6efe8;border:1px solid #d3e4d9;border-radius:18px;margin-bottom:75px;font-size:14px;color:#547263;}
+    footer {border-top:1px solid var(--border);padding:25px 0 40px;color:#6c8275;font-size:13px;} footer .bottom {display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+    @media(max-width:760px) {.hero {grid-template-columns:1fr;padding:62px 0 60px;gap:40px}.preview{max-width:420px;width:100%;margin:auto}.cards{grid-template-columns:1fr}.section{padding-bottom:55px}nav{min-height:66px}.menu{gap:14px}.lead{font-size:16px}.cell{font-size:clamp(13px,4vw,21px)}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="주 메뉴"><a class="brand" href="/"><span class="logo" aria-hidden="true">9</span> 한 칸의 여유</a><div class="menu"><a href="#features">게임 소개</a><a href="/privacy.html">개인정보처리방침</a></div></nav></div></header>
+<main>
+ <div class="wrap"><section class="hero" aria-labelledby="main-title">
+ <div><div class="eyebrow">A QUIET MOMENT, ONE CELL AT A TIME</div><h1 id="main-title">복잡한 하루,<br><em>한 칸의 여유.</em></h1><p class="lead">서두르지 않고 내 속도로 즐기는 스도쿠. 차분한 화면에서 한 칸씩 채우다 보면, 어느새 하나의 퍼즐이 완성됩니다.</p><div class="chips"><span>600개의 스테이지</span><span>초급 · 중급 · 고급</span><span>매일의 도전</span></div></div>
+ <div class="preview" aria-label="스도쿠 게임 보드 예시"><div class="sheet"><div class="sheet-head"><span>초급 · 스테이지 001</span><span>☆☆☆</span></div><div class="sudoku" id="example-board" role="img" aria-label="9행 9열 스도쿠 게임 보드 예시"></div><div class="sheet-foot"><span>차분하게, 하나씩</span><span>01 : 24</span></div></div></div>
+ </section></div>
+ <div class="wrap"><section class="section" id="features"><div class="eyebrow">THE GAME</div><h2>나만의 속도로 풀어보세요.</h2><div class="cards"><div class="card"><strong>600개의 퍼즐</strong><p>쉬운 문제부터 도전적인 문제까지, 각 난이도별 200개 스테이지를 준비했습니다.</p></div><div class="card"><strong>하루 한 번의 즐거움</strong><p>일일 도전과 별 등급, 업적 도감으로 작은 성취를 기록할 수 있습니다.</p></div><div class="card"><strong>필요할 때 도움받기</strong><p>힌트와 재도전 지원 기능으로 막히는 순간에도 다시 도전할 수 있습니다.</p></div></div></section><div class="note">Google Play 출시 준비 중인 게임입니다. 이 사이트는 게임 소개와 개인정보처리방침 안내를 위한 공식 페이지이며, 게임 자체의 다운로드를 제공하지 않습니다.</div></div>
+</main>
+<footer><div class="wrap bottom"><span>© 2026 한 칸의 여유. All rights reserved.</span><span><a href="/privacy.html">개인정보처리방침</a> · <a href="https://github.com/kmk7082-del" rel="noopener noreferrer">개발자 GitHub</a></span></div></footer>
+<script>
+(function(){
+  const sample='530070000600195000098000060800060003400803001700020006060000280000419005000080079';
+  const board=document.getElementById('example-board');
+  for(let i=0;i<81;i++){
+    const el=document.createElement('span');el.className='cell'+(sample[i]==='0'?' empty':'')+(i===21?' selected':'');
+    el.textContent=sample[i]==='0'?'':sample[i];board.appendChild(el);
+  }
+})();
+</script>
+</body></html>
